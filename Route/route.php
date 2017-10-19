@@ -2,8 +2,6 @@
 
 namespace iCaptious;
 
-Include(dirname(__FILE__).'/path_data.php');
-
 /**
 * 
 */
