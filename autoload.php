@@ -10,12 +10,20 @@ spl_autoload_extensions('.php');
  */
 spl_autoload_register(function ($class_name) {
 	// Only try to load classes with the WAID namepsace prefix
-	if(strpos($class_name, 'PerfectBuild\\') === 0){
-		// Replace namespace separator with directory separator (prolly not required)
-		$class_name = str_replace('\\', DIRECTORY_SEPARATOR, substr($class_name, 13));
-	
-		// Get full name of file containing the required class
-		$file = PERFECT_BUILD_ROOT.DIRECTORY_SEPARATOR.$class_name.".php";	
+
+	if (strpos($class_name, "iCaptious\\") !== false) {
+
+		// split the namespace to an array
+		$namespaces = explode("\\", $class_name);
+
+		// unset "iCaptious" since this is as main directory
+		unset($namespaces[0]);
+
+		// Replace namespace separator with directory separator
+		$directory_file = implode(DIRECTORY_SEPARATOR, $namespaces)."/".end($namespaces);
+
+		// Get full path of file containing the required class
+		$file = dirname(__FILE__).DIRECTORY_SEPARATOR.$directory_file.".php";	
 		
 		// Load file if it exists
 		if (is_readable($file)){

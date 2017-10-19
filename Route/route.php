@@ -5,7 +5,7 @@ namespace iCaptious;
 /**
 * 
 */
-class Route extends \iCaptious\Path
+class Route extends \iCaptious\Route\Path
 {
 	
 	function __construct()
