@@ -12,11 +12,22 @@ class Route extends \iCaptious\Route\Path
 
 	}
 
+
 	/**
-	 * [load description]
-	 * @param  [string]   $route    [It gives the route]
-	 * @param  [function] $callback [Will be called if the route was matched]
-	 * @return [unknown]            [It returns the output of the callback function]
+	 * Duplicate of Route::load Function
+	 * @param  string   $route    Route to be matched
+	 * @param  function $callback Will be called if the route matches]
+	 * @return unknown            It returns the output of the callback function
+	 */
+	static function get($route, $callback){
+		return call_user_func_array(__NAMESPACE__ .'\Route::load', func_get_args());
+	}
+
+	/**
+	 * Calls the calback given if route matches
+	 * @param  string   $route    Route to be matched
+	 * @param  function $callback Will be called if the route matches]
+	 * @return unknown            It returns the output of the callback function
 	 */
 	static function load($route, $callback){
 		$route = self::Sanitize_Route($route);
@@ -31,7 +42,7 @@ class Route extends \iCaptious\Route\Path
 		}
 
 		if ($route === $real_route) {
-			call_user_func_array($callback, $arguments);
+			return call_user_func_array($callback, $arguments);
 		}
 		return false;
 	}
