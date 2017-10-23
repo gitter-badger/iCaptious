@@ -1,11 +1,11 @@
 <?php
 
-namespace iCaptious;
+namespace iCaptious\Core;
 
 /**
 * 
 */
-class Route extends \iCaptious\Route\Path
+class Route extends \iCaptious\Core\Path
 {
 	
 	function __construct(){

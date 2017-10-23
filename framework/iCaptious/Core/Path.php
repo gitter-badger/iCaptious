@@ -1,6 +1,6 @@
 <?php 
 
-namespace iCaptious\Route;
+namespace iCaptious\Core;
 /**
 * 
 */
