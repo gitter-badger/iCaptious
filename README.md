@@ -35,7 +35,7 @@ Route::load("/", function(){
 
 First, require the autoload file `autoload.php`
 
-iCaptious Routing library can do many requests as Redirect, Secure SSL Connection, process get requests etc.\n
+iCaptious Routing library can do many requests as Redirect, Secure SSL Connection, process get requests etc.
 For example:
 ```php
 <?php
