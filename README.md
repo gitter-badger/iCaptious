@@ -22,7 +22,7 @@ can require into your script instead of Composer's `vendor/autoload.php`. For
 example:
 
 ```php
-require('/path/to/iCaptious/autoload.php');
+Require('/path/to/iCaptious/autoload.php');
 
 use iCaptious\Route;
 
@@ -45,9 +45,7 @@ use iCaptious\Route;
 Route::Domain("icaptious.com", function(){ 
   // Secure the connection by default if not secured already
   Route::Secure();
-  ?>
-  <h1>Welcome to icaptious.com :)</h1>
-  <?
+  echo "<h1>Welcome to icaptious.com :)</h1>";
 });
 ```
 
