@@ -22,14 +22,11 @@ spl_autoload_register(function ($class) {
 	// split the namespace to an array
 	$namespaces = explode("/", $class);
 
-	// unset "iCaptious" since this is as main directory
-	unset($namespaces[0]);
-
 	// Replace namespace separator with directory separator
-	$path = implode(DIRECTORY_SEPARATOR, $namespaces)."/".end($namespaces);
+	$path = implode(DIRECTORY_SEPARATOR, $namespaces);
 
 	// Get full path of file containing the required class
-	$file = dirname(__FILE__).DIRECTORY_SEPARATOR.$path.".php";	
+	$file = dirname(__FILE__).DIRECTORY_SEPARATOR."framework".DIRECTORY_SEPARATOR.$path.".php";	
 	
 	// Load file if it exists
 	if (is_readable($file)){

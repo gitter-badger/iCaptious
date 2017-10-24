@@ -24,7 +24,7 @@ example:
 ```php
 Require('/path/to/iCaptious/autoload.php');
 
-use iCaptious\Route;
+use iCaptious\Core\Route;
 
 Route::load("/", function(){
    echo "Hello World!";
@@ -39,7 +39,7 @@ iCaptious Routing library can do many requests as Redirect, Secure SSL Connectio
 For example:
 ```php
 <?php
-use iCaptious\Route;
+use iCaptious\Core\Route;
 
 // run this function if the domain was requested
 Route::Domain("icaptious.com", function(){ 

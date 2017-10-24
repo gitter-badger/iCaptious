@@ -1,0 +1,30 @@
+{
+	"name" : "framework/iCaptious",
+	"description" : "An Open Source PHP Framework built to make programming whith PHP much easier :)",
+	"license" : [ "MIT" ],
+	"authors" : [
+		{
+			"name": "Neo Morina",
+			"email" : "neomorina@gmail.com",
+			"role": "Author"
+		}
+	],
+
+	"keywords" : [ "framework", "library", "php", "php7", "php-framework" ],
+
+	"homepage": "https://developers.icaptious.com/iCaptious",
+	"support" : {
+		"issues" : "https://github.com/neomorina/iCaptious/issues",
+		"source" : "https://github.com/neomorina/iCaptious"
+	},
+
+	"require" : {
+		"php" : ">=5.6"
+	},
+
+	"autoload": {
+        "psr-4": {
+            "iCaptious\\": "framework/iCaptious"
+        }
+    }
+}
