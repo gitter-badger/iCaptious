@@ -2,7 +2,7 @@
 
 namespace iCaptious\Core;
 
-use Domain\Path;
+use iCaptious\Core\Domain\Path;
 /**
 * 
 */
