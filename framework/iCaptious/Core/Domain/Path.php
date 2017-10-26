@@ -1,6 +1,6 @@
 <?php 
 
-namespace iCaptious\Core;
+namespace iCaptious\Core\Domain;
 /**
 * 
 */
