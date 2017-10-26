@@ -2,10 +2,11 @@
 
 namespace iCaptious\Core;
 
+use Domain\Path;
 /**
 * 
 */
-class Route extends \iCaptious\Core\Domain\Path
+class Route extends Path
 {
 	
 	function __construct(){
