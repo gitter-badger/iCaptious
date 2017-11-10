@@ -1,5 +1,7 @@
 # iCaptious Framework
 
+[![Join the chat at https://gitter.im/iCaptious/Lobby](https://badges.gitter.im/iCaptious/Lobby.svg)](https://gitter.im/iCaptious/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 * Project page: http://developers.icaptious.com/iCaptious/
 * Repository: https://github.com/neomorina/iCaptious
 * Version: 1.0.0
