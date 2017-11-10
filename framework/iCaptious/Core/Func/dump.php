@@ -1,7 +1,7 @@
 <?php
 
 function dump(){
-	if (DEBUG) {
+	if (defined('DEBUG')) {
 		echo "<pre>";
 		if (count(func_get_args()) <= 1) {
 			var_dump(func_get_args()[0]);
